@@ -25,12 +25,6 @@
             </v-btn>
         </template>
         <v-list>
-            <v-list-item>
-                <v-list-item-icon>
-                        <v-icon>mdi-account-outline</v-icon>
-                    </v-list-item-icon>
-                <v-list-item-title>Profile</v-list-item-title>
-            </v-list-item>
             <v-list-item @click="signOut()">
                 <v-list-item-icon>
                         <v-icon>mdi-logout-variant</v-icon>

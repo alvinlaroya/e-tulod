@@ -304,7 +304,7 @@ export default {
         .where("isDispatch", "==", false)
         .where("hasRider", "==", false)
         .where("status", "==", 1)
-        /* .orderBy("createdAt") */
+        .orderBy("createdAt", "desc")
         .onSnapshot((querySnapshot) => {
           const bookingsArray = querySnapshot.docs.map((documentSnapshot) => {
             return {
@@ -397,7 +397,9 @@ export default {
           firebase.firestore().collection("bookings").doc(item.id).collection("timeline").add({
             time: strTime,
             title: "Dispatched", 
-            description: `Your book is dispatched to ${this.allOnlineRiders[this.dispatchIndex].fname} ${this.allOnlineRiders[this.dispatchIndex].lname}`
+            description: `Your book is dispatched to ${this.allOnlineRiders[this.dispatchIndex].fname} ${this.allOnlineRiders[this.dispatchIndex].lname}`,
+            createdAt: firebase.firestore.Timestamp.fromDate(new Date()),
+            step: 1
           })
           .then(() => {
             console.log("Document successfully updated!");

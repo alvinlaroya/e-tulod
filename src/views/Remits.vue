@@ -41,10 +41,10 @@
                 {{ item.remittedAt.toDate() | moment("MMMM DD YYYY, h:mm:ss a") }}
               </template>
               <template v-slot:item.etulodPercentageSlot="{ item }">
-                &#8369;{{ item.etulodPercentage }}
+                {{ item.etulodPercentage }}%
               </template>
               <template v-slot:item.driverComissionSlot="{ item }">
-                &#8369;{{ item.driverCommission }}
+                &#8369;{{ item.driverComission }}
               </template>
               <template v-slot:item.isPaidSlot="{ item }">
                 <v-chip
