@@ -1,11 +1,13 @@
 const state = {
     driversToVerify: [],
-    onlineRiders: []
+    onlineRiders: [],
+    drivers: []
 };
 
 const getters = {
     allDriversToVerify: state => state.driversToVerify,
-    allOnlineRiders: state => state.onlineRiders
+    allOnlineRiders: state => state.onlineRiders,
+    allDrivers: state => state.drivers
 };
 
 const actions = {
@@ -32,6 +34,9 @@ const mutations = {
     },
     SET_ONLINE_RIDERS: (state, drivers) => {
         state.onlineRiders = drivers
+    },
+    SET_RIDERS: (state, drivers) => {
+        state.drivers = drivers
     }
 };
 

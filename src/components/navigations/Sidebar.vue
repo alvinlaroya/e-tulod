@@ -58,6 +58,14 @@
                     </v-list-item-content>
                     <v-chip draggable color="red" small text-color="white" v-if="$store.getters.allDriversToVerify.length > 0">{{ $store.getters.allDriversToVerify.length }}</v-chip>
                 </v-list-item>
+                <v-list-item to="/rider-management">
+                    <v-list-item-icon>
+                        <v-icon>mdi-card-account-details-outline</v-icon>
+                    </v-list-item-icon>
+                    <v-list-item-content>
+                        <v-list-item-title>Rider Management</v-list-item-title>
+                    </v-list-item-content>
+                </v-list-item>
             </v-list-item-group>
              <v-subheader>OTHERS</v-subheader>
             <v-list-item-group color="primary">

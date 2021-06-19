@@ -10,6 +10,7 @@ import DriverRegistration from '../views/DriverRegistration.vue'
 import DriverVerification from '../views/DriverVerification.vue'
 import RemitRider from '../views/RemitRider.vue'
 import AllRemit from '../views/Remits.vue'
+import RiderManagement from '../views/RiderManagement.vue'
 
 // Components
 import Navbar from '../components/header/Navbar.vue'
@@ -89,6 +90,15 @@ const routes = [
     name: 'RemitRider',
     components: {
       default: AllRemit,
+      navbar: Navbar,
+      sidebar: Sidebar
+    }
+  },
+  {
+    path: '/rider-management',
+    name: 'RiderManagement',
+    components: {
+      default: RiderManagement,
       navbar: Navbar,
       sidebar: Sidebar
     }
