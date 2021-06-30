@@ -95,7 +95,7 @@ export default {
         sortable: true,
         value: "remittedAtSlot",
       },
-      { text: "e-tulod percentage", value: "etulodPercentageSlot", sortable: true },
+      { text: "e-tulod comission", value: "etulodPercentageSlot", sortable: true },
       { text: "Driver Comission", value: "driverComissionSlot", sortable: true },
       { text: "No. of trips", value: "tripCtr", sortable: true },
       { text: "Status", value: "isPaidSlot", sortable: true },
